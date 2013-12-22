@@ -3,8 +3,12 @@
 ;;; Commentary:
 ;;
 (prelude-require-package 'sbt-mode)
+(require 'scala-mode2)
 (require 'sbt-mode)
-(setq-default sbt:program-name "play")
+(defun play-start ()
+  (interactive)
+  (let ((sbt:program-name "play")) ; do a 'let' binding for the variable
+    (sbt-start)))
 (provide 'prelude-sbt)
 
 ;;; prelude-sbt.el ends here
