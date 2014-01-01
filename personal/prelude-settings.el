@@ -2,8 +2,10 @@
 
 ;;; Commentary:
 ;;
+;;; Code:
 
-
+(require 'whitespace)
+(setq whitespace-line-column 120)
 (provide 'prelude-settings)
 
 ;;; prelude-settings.el ends here
