@@ -14,7 +14,13 @@
     (sbt-start)))
 
 (prelude-require-package 'ensime)
+(require 'scala-mode2)
 (require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+(setq scala-indent:use-javadoc-style t)
+(eval-after-load "flyspell"
+  '(defun flyspell-prog-mode (&optional arg)))
+
+
 (provide 'prelude-ensime)
 ;;; prelude-ensime.el ends here
