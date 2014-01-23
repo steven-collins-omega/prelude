@@ -4,6 +4,8 @@
 ;;
 ;;; Code:
 (prelude-require-package 'sbt-mode)
+(prelude-require-package 'ensime)
+(prelude-require-package 'scala-mode2)
 
 (require 'scala-mode2)
 (require 'sbt-mode)
@@ -13,7 +15,6 @@
   (let ((sbt:program-name "play")) ; do a 'let' binding for the variable
     (sbt-start)))
 
-(prelude-require-package 'ensime)
 (require 'scala-mode2)
 (require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
