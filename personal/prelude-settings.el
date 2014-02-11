@@ -3,11 +3,16 @@
 ;;; Commentary:
 ;;
 ;;; Code:
+
+;; Line width
 (require 'whitespace)
 (setq whitespace-line-column 120)
-(prelude-require-package 'solarized-theme)
+
+;; Theme settings
 (disable-theme 'zenburn)
-(load-theme 'solarized-dark t)
+(load-theme 'sanityinc-tomorrow-day t)
+
+;; Global enabled modes
 (global-rainbow-delimiters-mode t)
 (global-linum-mode t)
 (provide 'prelude-settings)
