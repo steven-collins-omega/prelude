@@ -10,5 +10,6 @@
   (interactive)
   (let ((sbt:program-name "play")) ; do a 'let' binding for the variable
     (sbt-start)))
+(setq scala-indent:use-javadoc-style t)
 (provide 'prelude-scala-sbt)
 ;;; prelude-scala-sbt.el ends here

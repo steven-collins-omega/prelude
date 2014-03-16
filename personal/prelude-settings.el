@@ -10,8 +10,7 @@
 
 ;; Theme settings
 (disable-theme 'zenburn)
-(load-theme 'sanityinc-tomorrow-day t)
-
+(load-theme 'base16-railscasts-dark t)
 ;; Global enabled modes
 (global-rainbow-delimiters-mode t)
 (global-linum-mode t)
