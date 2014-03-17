@@ -3,6 +3,7 @@
 ;;; Commentary:
 ;;
 ;;; Code:
+(prelude-require-package 'sbt-mode)
 (require 'prelude-scala)
 (require 'sbt-mode)
 (defun play-start ()
