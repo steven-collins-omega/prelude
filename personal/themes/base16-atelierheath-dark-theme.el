@@ -24,7 +24,7 @@
       (base0E "#7b59c0")
       (base0F "#cc33cc"))
 
-  (custom-theme-set-faces 
+  (custom-theme-set-faces
    'base16-atelierheath-dark
 
    ;; Built-in stuff (Emacs 23)
@@ -32,14 +32,13 @@
    `(border-glyph ((t (nil))))
    `(cursor ((t (:background ,base08))))
    `(default ((t (:background ,base00 :foreground ,base05))))
-   `(fringe ((t (:background ,base02))))
+   `(fringe ((t (:background ,base00))))
    `(gui-element ((t (:background ,base03 :foreground ,base06))))
    `(highlight ((t (:background ,base01))))
    `(link ((t (:foreground ,base0D))))
    `(link-visited ((t (:foreground ,base0E))))
-   `(linum ((t (:background ,base03))))
    `(minibuffer-prompt ((t (:foreground ,base0D))))
-   `(mode-line ((t (:background ,base02 :foreground ,base04 :box nil))))
+   `(mode-line ((t (:background ,base00 :foreground ,base05 :box t))))
    `(mode-line-buffer-id ((t (:foreground ,base0E :background nil))))
    `(mode-line-emphasis ((t (:foreground ,base06 :slant italic))))
    `(mode-line-highlight ((t (:foreground ,base0E :box nil :weight bold))))
@@ -71,7 +70,7 @@
    `(font-lock-warning-face ((t (:foreground ,base08))))
 
    ;; linum-mode
-   `(linum ((t (:background ,base01 :foreground ,base03))))
+   `(linum ((t (:background ,base00 :foreground ,base03))))
 
    ;; Search
    `(match ((t (:foreground ,base0D :background ,base01 :inverse-video t))))
@@ -452,7 +451,7 @@
    `(custom-variable-tag ((t (:foreground ,base0D))))
    `(custom-group-tag ((t (:foreground ,base0D))))
    `(custom-state ((t (:foreground ,base0B)))))
-   
+
 
   (custom-theme-set-variables
    'base16-atelierheath-dark
