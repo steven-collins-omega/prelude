@@ -4,16 +4,19 @@
 ;;
 ;;; Code:
 
-;; Line width
-(require 'whitespace)
-(setq whitespace-line-column 120)
+
 
 ;; Theme settings
 (disable-theme 'zenburn)
-(load-theme 'base16-railscasts-dark t)
+(load-theme 'base16-default-dark t)
+
 ;; Global enabled modes
 (global-rainbow-delimiters-mode t)
 (global-linum-mode t)
+
+;; Line width of whitespace mode
+(require 'whitespace)
+(setq whitespace-line-column 100)
 (provide 'prelude-settings)
 
 ;;; prelude-settings.el ends here
