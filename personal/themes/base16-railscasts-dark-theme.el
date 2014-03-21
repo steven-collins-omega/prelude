@@ -28,7 +28,7 @@
    'base16-railscasts-dark
 
    ;; Built-in stuff (Emacs 23)
-   `(border ((t (:background ,base06))))
+   `(border ((t (:background ,base03))))
    `(border-glyph ((t (nil))))
    `(cursor ((t (:background ,base08))))
    `(default ((t (:background ,base00 :foreground ,base05))))
@@ -36,7 +36,7 @@
    `(gui-element ((t (:background ,base03 :foreground ,base06))))
    `(highlight ((t (:background ,base01))))
    `(link ((t (:foreground ,base0D))))
-   `(link-visited ((t (:foreground ,base05))))
+   `(link-visited ((t (:foreground ,base0E))))
    `(minibuffer-prompt ((t (:foreground ,base0D))))
    `(mode-line ((t (:background ,base00 :foreground ,base05 :box t))))
    `(mode-line-buffer-id ((t (:foreground ,base0E :background nil))))
