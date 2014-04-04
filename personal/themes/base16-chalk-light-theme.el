@@ -32,14 +32,13 @@
    `(border-glyph ((t (nil))))
    `(cursor ((t (:background ,base08))))
    `(default ((t (:background ,base07 :foreground ,base02))))
-   `(fringe ((t (:background ,base02))))
+   `(fringe ((t (:background ,base07))))
    `(gui-element ((t (:background ,base03 :foreground ,base06))))
    `(highlight ((t (:background ,base01))))
    `(link ((t (:foreground ,base0D))))
    `(link-visited ((t (:foreground ,base0E))))
-   `(linum ((t (:background ,base03))))
    `(minibuffer-prompt ((t (:foreground ,base0D))))
-   `(mode-line ((t (:background ,base02 :foreground ,base04 :box nil))))
+   `(mode-line ((t (:background ,base07 :foreground ,base02 :box t))))
    `(mode-line-buffer-id ((t (:foreground ,base0E :background nil))))
    `(mode-line-emphasis ((t (:foreground ,base06 :slant italic))))
    `(mode-line-highlight ((t (:foreground ,base0E :box nil :weight bold))))
@@ -49,8 +48,9 @@
    `(error ((t (:foreground ,base08 :weight bold))))
    `(warning ((t (:foreground ,base09 :weight bold))))
    `(success ((t (:foreground ,base0B :weight bold))))
-
+   `(hl-line ((t (:background ,base06 :foreground ,base03))))
    `(header-line ((t (:inherit mode-line :foreground ,base0E :background nil))))
+
 
    ;; Font-lock stuff
    `(font-lock-builtin-face ((t (:foreground ,base0C))))
@@ -71,7 +71,7 @@
    `(font-lock-warning-face ((t (:foreground ,base08))))
 
    ;; linum-mode
-   `(linum ((t (:background ,base01 :foreground ,base03))))
+   `(linum ((t (:background ,base07 :foreground ,base04))))
 
    ;; Search
    `(match ((t (:foreground ,base0D :background ,base01 :inverse-video t))))
