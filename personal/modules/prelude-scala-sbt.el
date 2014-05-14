@@ -12,5 +12,18 @@
   (let ((sbt:program-name "play")) ; do a 'let' binding for the variable
     (sbt-start)))
 (setq scala-indent:use-javadoc-style t)
+
+(defun test-only ()
+  "Run test with current file."
+  (interactive)
+  (sbt-command (concat "testOnly " (find-spec-name))))
+
+(defun find-spec-name ()
+  "Find spec name of current buffer."
+  (concat
+   "*."
+   (file-name-sans-extension (file-name-nondirectory (buffer-name))))
+  )
+
 (provide 'prelude-scala-sbt)
 ;;; prelude-scala-sbt.el ends here
