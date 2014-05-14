@@ -22,10 +22,13 @@
   "Find spec name of current buffer."
   (concat "*." (file-name-sans-extension (file-name-nondirectory (buffer-name)))))
 
+(require 'comint)
 (defun compile-sbt-project ()
   "Compile the sbt project."
-  (sbt-command "test:compile")
-  )
+  (when
+      (comint-check-proc
+       (sbt:buffer-name))
+    (sbt-command "test:compile")))
 
 (add-hook 'scala-mode-hook
           (lambda ()
