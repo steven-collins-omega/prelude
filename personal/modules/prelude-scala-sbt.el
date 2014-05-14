@@ -20,10 +20,16 @@
 
 (defun find-spec-name ()
   "Find spec name of current buffer."
-  (concat
-   "*."
-   (file-name-sans-extension (file-name-nondirectory (buffer-name))))
+  (concat "*." (file-name-sans-extension (file-name-nondirectory (buffer-name)))))
+
+(defun compile-sbt-project ()
+  "Compile the sbt project."
+  (sbt-command "test:compile")
   )
+
+(add-hook 'scala-mode-hook
+          (lambda ()
+            (add-hook 'after-save-hook 'compile-sbt-project)))
 
 (provide 'prelude-scala-sbt)
 ;;; prelude-scala-sbt.el ends here
