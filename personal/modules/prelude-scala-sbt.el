@@ -24,8 +24,9 @@
 
 (defun compile-sbt-project ()
   "Compile the sbt project."
-  (sbt-command "test:compile")
-  )
+  (when
+      (comint-check-proc (sbt:buffer-name))
+    (sbt-command "test:compile")))
 
 (add-hook 'scala-mode-hook
           (lambda ()
