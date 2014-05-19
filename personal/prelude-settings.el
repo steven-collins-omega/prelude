@@ -8,7 +8,7 @@
 
 ;; Theme settings
 (disable-theme 'zenburn)
-(load-theme 'base16-railscasts-dark t)
+(load-theme 'base16-eighties-dark t)
 
 ;; Global enabled modes
 (global-rainbow-delimiters-mode t)

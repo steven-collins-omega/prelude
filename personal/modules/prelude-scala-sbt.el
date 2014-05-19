@@ -33,6 +33,7 @@
           (lambda ()
             (add-hook 'after-save-hook 'compile-sbt-project)))
 
+(require 'scala-mode2)
 (define-key scala-mode-map (kbd "C-c C-t") 'test-only)
 
 (provide 'prelude-scala-sbt)
