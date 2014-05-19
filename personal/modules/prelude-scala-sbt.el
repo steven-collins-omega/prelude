@@ -26,13 +26,14 @@
 (defun compile-sbt-project ()
   "Compile the sbt project."
   (when
-      (comint-check-proc
-       (sbt:buffer-name))
+      (comint-check-proc (sbt:buffer-name))
     (sbt-command "test:compile")))
 
 (add-hook 'scala-mode-hook
           (lambda ()
             (add-hook 'after-save-hook 'compile-sbt-project)))
+
+(define-key scala-mode-map (kbd "C-c C-t") 'test-only)
 
 (provide 'prelude-scala-sbt)
 ;;; prelude-scala-sbt.el ends here
