@@ -11,6 +11,8 @@
 (load-theme 'base16-eighties-dark t)
 
 ;; Global enabled modes
+(prelude-require-package 'rainbow-delimiters)
+(require 'rainbow-delimiters)
 (global-rainbow-delimiters-mode t)
 (global-linum-mode t)
 
