@@ -65,7 +65,7 @@
    `(font-lock-regexp-grouping-backslash ((t (:foreground ,base0A))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,base0E))))
    `(font-lock-string-face ((t (:foreground ,base0B))))
-   `(font-lock-type-face ((t (:foreground ,base0A))))
+   `(font-lock-type-face ((t (:foreground ,base0A :italic t))))
    `(font-lock-variable-name-face ((t (:foreground ,base0C))))
    `(font-lock-warning-face ((t (:foreground ,base08))))
 
