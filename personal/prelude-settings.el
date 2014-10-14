@@ -13,7 +13,7 @@
 ;; Global enabled modes
 (prelude-require-package 'rainbow-delimiters)
 (require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode t)
+;(global-rainbow-delimiters-mode t)
 (global-linum-mode t)
 
 ;; Line width of whitespace mode
