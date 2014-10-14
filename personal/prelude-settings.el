@@ -8,12 +8,9 @@
 
 ;; Theme settings
 (disable-theme 'zenburn)
-(load-theme 'base16-eighties-dark t)
+(load-theme 'base16-ocean-dark t)
 
 ;; Global enabled modes
-(prelude-require-package 'rainbow-delimiters)
-(require 'rainbow-delimiters)
-;(global-rainbow-delimiters-mode t)
 (global-linum-mode t)
 
 ;; Line width of whitespace mode
