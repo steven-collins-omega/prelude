@@ -4,9 +4,11 @@
 ;;
 ;;; Code:
 (prelude-require-package 'auto-complete)
+
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
+(global-auto-complete-mode 1)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
 
 (provide 'prelude-auto-complete)

@@ -2,4 +2,6 @@
 ;;(require 'prelude-ensime)
 (require 'prelude-scala-sbt)
 (require 'prelude-dired)
+(require 'prelude-company)
+(require 'prelude-compact)
 (require 'prelude-themes)
