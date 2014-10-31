@@ -5,11 +5,7 @@
 ;;; Code:
 
 
-
-;; Theme settings
-(disable-theme 'zenburn)
-(load-theme 'base16-ocean-dark t)
-
+(require 'personal-modules)
 ;; Global enabled modes
 (global-linum-mode t)
 (add-hook 'php-mode-hook

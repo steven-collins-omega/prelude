@@ -4,4 +4,5 @@
 (require 'prelude-dired)
 (require 'prelude-company)
 (require 'prelude-compact)
-(require 'prelude-themes)
+
+(provide 'personal-modules)
