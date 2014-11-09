@@ -4,7 +4,7 @@
 ;;
 ;;; Code:
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(setq-default prelude-theme 'base16-solarized-dark)
+(setq-default prelude-theme 'base16-summerfruit-dark)
 
 (provide 'preload-settings)
 
