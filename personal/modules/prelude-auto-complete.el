@@ -4,6 +4,8 @@
 ;;
 ;;; Code:
 (prelude-require-package 'auto-complete)
+(eval-after-load "flyspell"
+  '(defun flyspell-prog-mode (&optional arg)))
 
 (require 'auto-complete)
 (require 'auto-complete-config)
