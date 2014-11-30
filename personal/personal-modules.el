@@ -5,7 +5,7 @@
 ;;(require 'prelude-ensime)
 (require 'prelude-scala-sbt)
 (require 'prelude-dired)
-(require 'prelude-auto-complete)
+(require 'prelude-company)
 (require 'prelude-compact)
 (require 'prelude-smart-mode-line)
 ;;; personal-modules.el ends here

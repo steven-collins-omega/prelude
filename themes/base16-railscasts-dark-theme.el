@@ -65,7 +65,7 @@
    `(font-lock-regexp-grouping-backslash ((t (:foreground ,base0A))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,base0E))))
    `(font-lock-string-face ((t (:foreground ,base0B))))
-   `(font-lock-type-face ((t (:foreground ,base0A))))
+   `(font-lock-type-face ((t (:foreground ,base0A :slant italic))))
    `(font-lock-variable-name-face ((t (:foreground ,base0C))))
    `(font-lock-warning-face ((t (:foreground ,base08))))
 
@@ -324,7 +324,7 @@
    `(js3-external-variable-face ((t (:foreground ,base0E))))
    `(js3-function-param-face ((t (:foreground ,base0D))))
    `(js3-jsdoc-tag-face ((t (:foreground ,base09))))
-   `(js3-jsdoc-type-face ((t (:foreground ,base0C))))
+   `(js3-jsdoc-type-face ((t (:foreground ,base0C :slant italic))))
    `(js3-jsdoc-value-face ((t (:foreground ,base0A))))
    `(js3-jsdoc-html-tag-name-face ((t (:foreground ,base0D))))
    `(js3-jsdoc-html-tag-delimiter-face ((t (:foreground ,base0B))))
